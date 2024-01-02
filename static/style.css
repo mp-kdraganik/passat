@@ -1,0 +1,11 @@
+img{
+    max-width: 100%;
+}
+.navbar-logo{
+    height: 42px;
+    width: auto;
+}
+.footer-logo{
+    height: 128px;
+    width: auto;
+}

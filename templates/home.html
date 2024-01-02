@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title%}
+Strona Główna
+{% endblock %}
+
+{% block content %}
+<div class="content">
+    <div class="hero">
+        <img class="banner" src="{{url_for("static", filename="banner.jpg")}}" alt="hero-banner">
+    </div>
+    <div class="card my-3">
+        <div class="card-body">
+            <h3 class="card-title">Konfigurator</h3>
+            <p>Dostosuj swojego Volkswagen Passata do własnych potrzeb dzięki naszemu innowacyjnemu konfiguratorowi napraw i tuningu. Oferujemy spersonalizowane usługi, abyś mógł cieszyć się pełną wydajnością i stylizacją swojego pojazdu.</p>
+            <a href="{{url_for("configurator")}}" class="btn btn-primary">Konfigurator</a>
+        </div>
+    </div>
+    <div class="card my-3">
+        <div class="card-body">
+            <h3 class="card-title">Blog</h3>
+            <p>Zanurz się w fascynujący świat Volkswagen Passat na naszym blogu! Odkrywaj tajniki tuningu, zgłębiaj techniczne aspekty napraw, i dowiedz się, jak dbać o swój Passat. Razem eksplorujemy historię, innowacje i praktyczne porady dotyczące tego klasycznego modelu, który zyskał serca motoryzacyjnych pasjonatów.</p>
+            <a href="{{url_for("blog")}}" class="btn btn-primary">Blog</a>
+        </div>
+    </div>
+    <div class="card my-3">
+        <div class="card-body">
+            <h3 class="card-title">O nas</h3>
+            <p>Odkryj świat pełen pasji do Volkswagen Passat! Wejdź na naszą podstronę już teraz i zobacz, jak możemy uczynić Twoje motoryzacyjne marzenia rzeczywistością. Czekamy na Ciebie z gotowymi do działania rozwiązaniami!</p>
+            <a href="{{url_for("about")}}" class="btn btn-primary">O nas</a>
+        </div>
+    </div>
+    <div class="card my-3">
+        <div class="card-body">
+            <h3 class="card-title">Kontakt</h3>
+            <p>Masz pytania dotyczące tuningu, naprawy czy złomowania swojego Volkswagen Passata? Jesteśmy tu dla Ciebie! Skontaktuj się z nami, a nasz zespół pasjonatów motoryzacji chętnie pomoże Ci spełnić Twoje potrzeby samochodowe.</p>
+            <a href="{{url_for("contact")}}" class="btn btn-primary">Kontakt</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
